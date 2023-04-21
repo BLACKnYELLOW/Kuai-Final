@@ -36,6 +36,7 @@ struct HomeView: View {
                                     }
                                     .padding([.leading,.trailing])
                             }
+                            
                             .foregroundColor(Color.black)
                             Text(dailyReminders.complete ? "yey" : "you can do it!")
                                 .padding()
@@ -44,6 +45,12 @@ struct HomeView: View {
                             .fill(Color.cyanColor)
                             .frame(width: 700,height: 1000)
                         )
+                        .task {
+                            if badRefresh == true {
+                                badRefresh = false
+                                viewState = 1
+                            }
+                        }
                     }
         }
         

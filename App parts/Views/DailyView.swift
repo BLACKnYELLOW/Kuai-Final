@@ -74,15 +74,15 @@ struct DailyView: View {
                 
                 
                 Text(fetchData.response.location.name)
-                    .foregroundColor(Color.orangeColor)
-                    .font(.custom("Arial", size: 50))
+                    .foregroundColor(Color.black)
+                    .font(.custom("Arial", size: 40))
                 Text(String(format: "\(Int(fetchData.response.current.temp_f))°", "%.1f"))
-                    .font(.custom("Arial", size: 90))
-                    .foregroundColor(Color.orangeColor)
+                    .font(.custom("Arial", size: 70))
+                    .foregroundColor(Color.black)
                     .padding(.leading, 23)
                 Text(fetchData.response.current.condition.text)
-                    .font(.custom("Arial", size: 40))
-                    .foregroundColor(Color.orangeColor)
+                    .font(.custom("Arial", size: 30))
+                    .foregroundColor(Color.black)
                     .padding(.bottom, 50)
                 
                 

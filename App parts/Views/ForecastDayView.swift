@@ -17,8 +17,8 @@ struct ForecastDayView: View {
             
             Text(day.condition.text)
                 .padding()
-                .font(.custom("Arial", size: 25))
-                .foregroundColor(Color.lightOrange)
+                .font(.custom("Arial", size: 20))
+                .foregroundColor(Color.black)
                 .background(Color.gray.opacity(0.2))
                 .cornerRadius(15.0)
           
@@ -26,20 +26,20 @@ struct ForecastDayView: View {
                
                 Text("Low: \(String(format: "\(Int(day.mintemp_f))°", "%.1f"))")
                     .padding()
-                    .font(.custom("Arial", size: 20))
-                    .foregroundColor(Color.lightOrange)
+                    .font(.custom("Arial", size: 15))
+                    .foregroundColor(Color.black)
                     .background(Color.gray.opacity(0.2))
                     .cornerRadius(15.0)
-                    .frame(width: 150,height: 50)
+                    .frame(width: 125,height: 40)
                     
                 
                 Text("High: \(String(format: "\(Int(day.maxtemp_f))°", "%.1f"))")
                     .padding()
-                    .font(.custom("Arial", size: 20))
-                    .foregroundColor(Color.lightOrange)
+                    .font(.custom("Arial", size: 15))
+                    .foregroundColor(Color.black)
                     .background(Color.gray.opacity(0.2))
                     .cornerRadius(15.0)
-                    .frame(width: 150,height: 50)
+                    .frame(width: 125,height: 40)
                 
             }
             

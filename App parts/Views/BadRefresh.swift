@@ -14,17 +14,22 @@ struct BadRefresh: View {
     
     var body: some View {
         ZStack {
-            Text("Loading")
-                .font(.largeTitle)
+            VStack {
+                Text("Loading")
+            }
+            
+                
+
             
         }.background(Rectangle()
             .fill(Color.cyanColor)
             .frame(width: 700,height: 1000)
+                     
         )
         .task {
             if badRefresh == true {
-                viewState = 1
                 badRefresh = false
+                viewState = 1
             }
         }
     }
