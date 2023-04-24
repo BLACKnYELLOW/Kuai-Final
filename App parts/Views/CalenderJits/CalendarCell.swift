@@ -75,15 +75,25 @@ struct CalendarCell: View {
 
                 Text("Today is today")
 
-                Text("The time is \(getHour()): \(getMinute())" )
+                Text("The time is \(getHour()): \(getMinute())")
+                
+                Text("VOTE FOR KUAI!")
+                    .font(.system(size: 30))
+                
+                    .padding()
+            
 
             }
 
             else {
 
                 Text("Today is not today")
-
-                Text("If that day was today then the time is \(getHour()):\(getMinute()), but it is not you dumb ass whore")
+                
+                Text("VOTE FOR KUAI!")
+                    .font(.system(size: 30))
+                
+                    .padding()
+                
 
             }
 
